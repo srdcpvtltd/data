@@ -1,0 +1,248 @@
+// DataTables
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import 'datatables.net-select-bs5/css/select.bootstrap5.css';
+@import "codemirror/lib/codemirror.css";
+@import "jquery-ui/dist/themes/base/jquery-ui.min.css";
+@import "style.css";
+
+.btn {
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+
+.input-group-glue {
+    display: table-cell;
+}
+
+.input-group-glue + .form-control {
+    border-left: none;
+}
+
+.input-group > input[placeholder] {
+    text-align: center;
+}
+
+
+/*Clone buttons*/
+.cloneya .clone, .cloneya > .delete {
+    margin-top: 21px;
+    padding: 0;
+    width: auto;
+    padding-right: 1em;
+}
+
+
+#previews {
+    img {
+        width: 80px;
+    }
+}
+
+
+h1 + .alert {
+    margin-top: 20px;
+}
+
+
+.sub-settings {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 0.5em;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.tax-row {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.addon-wrapper {
+    .tax-row:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+
+    .tax-row:not(:first-child) {
+
+        .cloneya .clone, .cloneya > .delete {
+            margin-top: 6px;
+        }
+
+        .control-label {
+            display: none;
+        }
+    }
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-20 {
+    margin: 0 0 20px 0;
+}
+
+.w-50p {
+    width: 50%;
+}
+
+#revenue-chart {
+    position: relative;
+    height: 300px;
+}
+
+#sales-chart {
+    position: relative;
+    height: 300px;
+}
+
+.dropzone.dz-clickable .dz-message {
+    display: none;
+
+    .dz-button {
+        display: none;
+    }
+}
+
+.file-row {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.dz-preview-file {
+    float: left;
+    margin-right: 12px;
+}
+
+.dz-file-info {
+    float: left;
+}
+
+.dz-preview-file img {
+    width: 50px;
+}
+
+.dz-complete .progress,
+.dz-complete .cancel,
+.file-row .delete {
+    display: none;
+}
+
+.dz-success .delete,
+.dz-complete .delete {
+    display: block;
+}
+
+.file-row .progress {
+    height: 4px !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.attachment-row {
+    border: 2px solid #EEE;
+    padding: 2px 6px;
+    border-radius: 30px;
+    margin: 0 12px 12px 0;
+    position: relative;
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.addon-wrapper .tax-row:not(:first-child) .clone,
+.addon-wrapper .tax-row:not(:first-child) > .delete {
+    margin-top: 0 !important;
+}
+
+.small-box .inner {
+    padding: 1.5em;
+    color: white;
+}
+
+.small-box-footer {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.small-box.bg-aqua {
+    background: #003768;
+}
+
+.small-box.bg-green {
+    background: #01224B;
+}
+
+.small-box.bg-yellow {
+    background: #9B8043;
+}
+
+.small-box.bg-red {
+    background: #D8AA54;
+}
+
+.small-box p {
+    margin: 0;
+}
+.small-box h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.receive-time {
+    text-align: right;
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.layer .attachments {
+    display: block;
+    margin-top: 12px;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+#chat-sidebar, #chat-box {
+    height: calc(100vh - var(--dynamic-height));
+}
+
+.attachment-upload-btn {
+    &:before {
+        content: "\f093";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+        text-rendering: auto;
+    }
+}
+
+
+.active-chat {
+    background-color: #fafafa !important;
+}
